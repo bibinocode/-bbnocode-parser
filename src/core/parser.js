@@ -68,12 +68,12 @@ async function parse(docxData, options = {}) {
       options
     }
 
+
     // 按顺序执行所有启用的插件
     const enabledPlugins = getPlugins().filter(plugin => plugin.enabled)
     publishEvent(EVENT_TYPES.PLUGINS_PROCESSING, { count: enabledPlugins.length })
 
     for (const plugin of enabledPlugins) {
-
 
       publishEvent(EVENT_TYPES.PLUGIN_PROCESS_START, {
         plugin: plugin.name,

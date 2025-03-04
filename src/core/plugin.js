@@ -98,7 +98,7 @@ const EVENT_TYPES = {
 /**
  * 插件存储
  */
-const Plugins= []
+const Plugins = []
 
 /**
  * 事件总线
@@ -115,8 +115,8 @@ const pluginRegistry = new BehaviorSubject()
  * 系统状态
  */
 const systemState = new BehaviorSubject({
-  isProcessing:false,
-  currentPhase:null
+  isProcessing: false,
+  currentPhase: null
 })
 
 
@@ -126,10 +126,10 @@ const systemState = new BehaviorSubject({
  * @param {String} eventType 事件类型
  * @param {Object} payload 载体
  */
-function publishEvent(eventType,payload = {}){
+function publishEvent(eventType, payload = {}) {
   eventBus.next({
-    type:eventType,
-    timestamp:Date.now(),
+    type: eventType,
+    timestamp: Date.now(),
     payload
   })
 }
@@ -141,7 +141,7 @@ function publishEvent(eventType,payload = {}){
  * @param {Function} handler 处理器
  * @returns {Function} 取消订阅函数
  */
-function subscribeToEvents(eventType,handler){
+function subscribeToEvents(eventType, handler) {
   const type = Array.isArray(eventType) ? eventType : [eventType]
   const unsubscribe = new Subject()
 
@@ -150,7 +150,7 @@ function subscribeToEvents(eventType,handler){
     takeUntil(unsubscribe)
   ).subscribe(handler)
 
-  return ()=> unsubscribe.next()
+  return () => unsubscribe.next()
 }
 
 
@@ -172,8 +172,8 @@ function subscribeToEvents(eventType,handler){
  * 
  * 
  */
-function registerPlugin(plugin){
-  if(!plugin || typeof plugin.process !== 'function'){
+function registerPlugin(plugin) {
+  if (!plugin || typeof plugin.process !== 'function') {
     throw new Error('请提供process处理函数')
   }
 
@@ -181,17 +181,17 @@ function registerPlugin(plugin){
 
   const fullPlugin = {
     id: `plugin_${Date.now()}_${Math.floor(Math.random() * 1000)}`,
-    name:pluginName,
+    name: pluginName,
     priority: plugin.priority || 10,
     process: plugin.process,
-    enabled:plugin.enabled || true,
-    onInit:plugin.onInit || (()=>{}),
-    onBeforeProcess:plugin.onBeforeProcess || (()=>{}),
-    onAfterProcess:plugin.onAfterProcess || (()=>{}),
-    onError:plugin.onError || (()=>{}),
-    onDestroy:plugin.onDestroy || (()=>{}),
-    subscriptions:[], // 插件可以订阅的事件
-    meta:plugin.meta || {}
+    enabled: plugin.enabled || true,
+    onInit: plugin.onInit || (() => { }),
+    onBeforeProcess: plugin.onBeforeProcess || (() => { }),
+    onAfterProcess: plugin.onAfterProcess || (() => { }),
+    onError: plugin.onError || (() => { }),
+    onDestroy: plugin.onDestroy || (() => { }),
+    subscriptions: [], // 插件可以订阅的事件
+    meta: plugin.meta || {}
   }
 
   try {
@@ -212,13 +212,13 @@ function registerPlugin(plugin){
 
   Plugins.push(fullPlugin)
   // 根据优先级排序
-  Plugins.sort((a, b) => a.priority - b.priority);
+  Plugins.sort((a, b) => b.priority - a.priority);
   // 更新注册表
   pluginRegistry.next([...Plugins])
 
   // 发布注册事件
-  publishEvent(EVENT_TYPES.PLUGIN_REGISTERED,{
-    plugin:fullPlugin
+  publishEvent(EVENT_TYPES.PLUGIN_REGISTERED, {
+    plugin: fullPlugin
   })
 
   return pluginName
@@ -229,10 +229,10 @@ function registerPlugin(plugin){
  * 卸载插件
  * @param {String} pluginNameOrId 插件名称或ID
  */
-function unregisterPlugin(pluginNameOrId){
+function unregisterPlugin(pluginNameOrId) {
   const index = Plugins.findIndex(p => p.name === pluginNameOrId || p.id === pluginNameOrId);
 
-  if(index === -1){
+  if (index === -1) {
     console.warn(`未找到插件: ${pluginNameOrId}`);
     return false;
   }
@@ -250,11 +250,11 @@ function unregisterPlugin(pluginNameOrId){
     unsubscribe();
   }
 
-  Plugins.splice(index,1)
+  Plugins.splice(index, 1)
   pluginRegistry.next([...Plugins])
 
-  publishEvent(EVENT_TYPES.PLUGIN_UNREGISTERED,{
-    plugin:plugin
+  publishEvent(EVENT_TYPES.PLUGIN_UNREGISTERED, {
+    plugin: plugin
   })
 
   return true
@@ -267,10 +267,10 @@ function unregisterPlugin(pluginNameOrId){
  * @param {Boolean} enabled 是否启用
  * @returns {Boolean} 操作是否成功
  */
-function setPluginEnabled(pluginNameOrId, enabled = true){
+function setPluginEnabled(pluginNameOrId, enabled = true) {
   const plugin = Plugins.findIndex(p => p.name === pluginNameOrId || p.id === pluginNameOrId);
 
-  if(!plugin){
+  if (!plugin) {
     console.warn(`未找到插件: ${pluginNameOrId}`);
     return false;
   }
@@ -278,9 +278,9 @@ function setPluginEnabled(pluginNameOrId, enabled = true){
   plugin.enabled = !!enabled;
   pluginRegistry.next([...Plugins])
 
-  publishEvent(EVENT_TYPES.PLUGIN_STATE_CHANGED,{
-    plugin:plugin,
-    enabled:plugin.enabled
+  publishEvent(EVENT_TYPES.PLUGIN_STATE_CHANGED, {
+    plugin: plugin,
+    enabled: plugin.enabled
   })
 
   return true
@@ -292,15 +292,15 @@ function setPluginEnabled(pluginNameOrId, enabled = true){
  * @param {String} pluginDir 插件目录 默认为 src/plugins
  * @returns {Promise<Array>} 加载的插件名称列表
  */
-async function loadPluginsFromDir(pluginDir = 'src/plugins'){
+async function loadPluginsFromDir(pluginDir = 'src/plugins') {
   publishEvent(EVENT_TYPES.PLUGINS_LOAD_START, { directory: pluginDir });
 
-  if(pluginDir === 'src/plugins'){
+  if (pluginDir === 'src/plugins') {
     pluginDir = path.resolve(process.cwd(), pluginDir)
   }
   if (!fs.existsSync(pluginDir)) {
     console.warn(`插件目录 ${pluginDir} 不存在`);
-    publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, { 
+    publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, {
       directory: pluginDir,
       error: '目录不存在'
     });
@@ -309,38 +309,38 @@ async function loadPluginsFromDir(pluginDir = 'src/plugins'){
 
   // 使用glob 递归查找
 
-  const {glob} = await import('glob')
-  const pluginFiles = await glob("*/index.{js,mjs}", {cwd: pluginDir,dot:false})
-  
+  const { glob } = await import('glob')
+  const pluginFiles = await glob("*/index.{js,mjs}", { cwd: pluginDir, dot: false })
+
   const loadPlugins = []
 
-  publishEvent(EVENT_TYPES.PLUGINS_DISCOVERED, { 
+  publishEvent(EVENT_TYPES.PLUGINS_DISCOVERED, {
     directory: pluginDir,
     files: pluginFiles
   });
 
 
-  for (const file of pluginFiles){
+  for (const file of pluginFiles) {
     try {
-      const filePath = path.resolve(pluginDir,file)
+      const filePath = path.resolve(pluginDir, file)
       const fileUrl = pathToFileURL(filePath).href
       const plugin = await import(fileUrl)
 
       // 支持默认导出或命名导出
       const pluginModule = plugin.default || plugin
 
-      if(typeof pluginModule === 'function'){
+      if (typeof pluginModule === 'function') {
         // 如果导出的是函数,需要获取插件实例
         const pluginInstance = pluginModule()
         const pluginName = registerPlugin(pluginInstance)
         loadPlugins.push(pluginName)
-      }else if(typeof pluginModule === 'object' && typeof pluginModule.process === 'function' ){
+      } else if (typeof pluginModule === 'object' && typeof pluginModule.process === 'function') {
         // 如果导出的是对象,且有process函数,则直接注册
         const pluginName = registerPlugin(pluginModule);
         loadPlugins.push(pluginName);
-      }else{
+      } else {
         console.warn(`加载插件 ${file} 格式不正确,跳过`)
-        publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, { 
+        publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, {
           file: file,
           error: '格式不正确'
         });
@@ -348,14 +348,14 @@ async function loadPluginsFromDir(pluginDir = 'src/plugins'){
 
     } catch (error) {
       console.error(`加载插件 ${file} 失败:`, error);
-      publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, { 
+      publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, {
         file: file,
         error: error.message
       });
     }
   }
 
-  publishEvent(EVENT_TYPES.PLUGINS_LOAD_COMPLETE, { 
+  publishEvent(EVENT_TYPES.PLUGINS_LOAD_COMPLETE, {
     directory: pluginDir,
     count: loadPlugins.length
   });
@@ -371,22 +371,22 @@ async function loadPluginsFromDir(pluginDir = 'src/plugins'){
  */
 async function loadPlugins(pluginPaths) {
   if (!pluginPaths) return [];
-  
+
   const paths = Array.isArray(pluginPaths) ? pluginPaths : [pluginPaths];
   const loadedPlugins = [];
 
-  publishEvent(EVENT_TYPES.PLUGINS_LOAD_START, { 
+  publishEvent(EVENT_TYPES.PLUGINS_LOAD_START, {
     directory: pluginPaths,
     count: paths.length
   });
-  
+
   for (const pluginPath of paths) {
     try {
       const fileUrl = pathToFileURL(path.resolve(pluginPath)).href;
       const plugin = await import(fileUrl);
       // 支持默认导出或命名导出
       const pluginModule = plugin.default || plugin;
-      
+
       if (typeof pluginModule === 'function') {
         // 如果导出的是函数，执行它获取插件实例
         const pluginInstance = pluginModule();
@@ -398,25 +398,25 @@ async function loadPlugins(pluginPaths) {
         loadedPlugins.push(pluginName);
       } else {
         console.warn(`插件文件 ${pluginPath} 格式不正确，已跳过`);
-        publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, { 
+        publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, {
           file: pluginPath,
           error: '格式不正确'
         });
       }
     } catch (error) {
       console.error(`加载插件 ${pluginPath} 失败:`, error);
-      publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, { 
+      publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, {
         file: pluginPath,
         error: error.message
       });
     }
   }
-  
-  publishEvent(EVENT_TYPES.PLUGINS_MANUAL_LOAD_COMPLETE, { 
+
+  publishEvent(EVENT_TYPES.PLUGINS_MANUAL_LOAD_COMPLETE, {
     paths,
     loaded: loadedPlugins
   });
-  
+
   return loadedPlugins;
 }
 

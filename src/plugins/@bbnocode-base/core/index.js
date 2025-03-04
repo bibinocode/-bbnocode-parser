@@ -111,14 +111,24 @@ function asColor(v, transform) {
  * @param {JSZip} zip
  * @param {String} file 需要读取的文件名
  */
-function zipToXml(zip, file) {
-  const xml = zip.file(file).async('text')
-  const parser = new xml2js.Parser()
-  return parser.parseStringPromise(xml)
+async function zipToXml(zip, file) {
+  try {
+    const zipFile = zip.file(file)
+    if (!zipFile) {
+      console.error('可用文件列表:', Object.keys(zip.files))
+      throw new Error(`文件 ${file} 不存在`)
+    }
+
+    const xml = await zipFile.async('text')
+    const parser = new xml2js.Parser()
+    return parser.parseStringPromise(xml)
+  } catch (error) {
+    throw error
+  }
 }
 
-
 export {
-  asColor, toPx, zipToXml
+  asColor, cm2Px, dxa2Px, emu2Px, pt2px, toPx,
+  zipToXml
 };
 
