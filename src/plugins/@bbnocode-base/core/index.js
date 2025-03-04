@@ -1,76 +1,124 @@
+import Color from 'color';
+import xml2js from 'xml2js';
+
+const RE_LENGTH_UNIT = /^([a-zA-Z]+)$/
+const RGB = /([a-fA-F0-9]{2}?){3}?/;
+
 /**
- * ENUM 转 像素
- * @param {String|Number} value
- * @returns {Number}
+ * pt -> px
+ * 1 pt = 1/72 inch
  */
-function ENUM_TO_PIXEL(value) {
-  return Math.ceil(parseInt(value) / 20 * 1.33445)
+function pt2px(pt) {
+  return pt * 96 / 72
 }
 
-
 /**
- * 根据宽度高度推断纸张方向
- * @param {Number} width
- * @param {NUmber} height
+ * emu -> px
+ * 12700 emu = 1 inch
  */
-function inferPaperDirection(width, height) {
-  const paperDirection = width > height ? 'horizontal' : 'vertical'
-  return paperDirection
+function emu2Px(emu) {
+  return pt2px(emu / 12700)
 }
 
-
 /**
- * 解析纸张方向
+ * dxa -> px
+ * 1 dxa = 1/20 pt
  */
-async function parserPaperDirection(docx) {
-  const documentXml = await docx.officeDocument.content('w\\:pgSize');
-  console.log(documentXml)
+function dxa2Px(dxa) {
+  return pt2px(dxa / 20.0)
 }
 
-
+/**
+ * cm -> px
+ * 1 cm = 96/2.54 px
+ */
+function cm2Px(cm) {
+  return pt2px(parseInt(cm) * 28.3464567)
+}
 
 /**
- * 解析页面设置信息
+ * toPx
  */
-function parsePageSetting(docx) {
-  parserPaperDirection(docx)
-  // 获取 pgSz 元素
-  const sectPr = docx.officeDocument.content("w\\:sectPr")
-  const pgSz = sectPr.children("w\\:pgSz").get(0)
-  const pgMar = sectPr.children("w\\:pgMar").get(0)
+function toPx(length) {
+  const value = parseInt(length)
+  const units = String(length).match(RE_LENGTH_UNIT)[1]
 
-  let pageWidth = ENUM_TO_PIXEL(pgSz.attribs["w:w"])
-  let pageHeight = ENUM_TO_PIXEL(pgSz.attribs["w:h"])
-  const pageMarginTop = ENUM_TO_PIXEL(pgMar.attribs["w:top"])
-  const pageMarginBottom = ENUM_TO_PIXEL(pgMar.attribs["w:bottom"])
-  const pageMarginLeft = ENUM_TO_PIXEL(pgMar.attribs["w:left"])
-  const pageMarginRight = ENUM_TO_PIXEL(pgMar.attribs["w:right"])
-  const pageHeader = ENUM_TO_PIXEL(pgMar.attribs["w:header"])
-  const pageGutter = ENUM_TO_PIXEL(pgMar.attribs["w:gutter"])
-
-  const paperDirection = inferPaperDirection(pageWidth, pageHeight)
-
-
-  return {
-    width: pageWidth,
-    height: pageHeight,
-    marginTop: pageMarginTop,
-    marginBottom: pageMarginBottom,
-    marginLeft: pageMarginLeft,
-    marginRight: pageMarginRight,
-    header: pageHeader,
-    gutter: pageGutter,
-    paperDirection
+  switch (units) {
+    case 'cm': return cm2Px(value) // 厘米
+    case 'mm': return cm2Px(value / 10) // 毫米
+    case 'in': return pt2px(value * 72) // 英寸
+    case 'emu': return emu2Px(value) // 缇
+    case 'dxa': return dxa2Px(value) // 点
+    case 'pt': return pt2px(value) // 磅
+    case 'ft': return pt2px(value * 864) // 英尺
+    default: return value
   }
 }
 
-async function parserDocument(docx) {
+/**
+ * asColor
+ * 将颜色转换为十六进制
+ * @param {String} v 颜色值
+ * @param {ColorTransform} transform 颜色变换
+ * 
+ * @typedef {Object} ColorTransform
+ * @property {Number} lumMod 亮度调节
+ * @property {Number} lumOff 亮度偏移
+ * @property {Number} tint 透明度
+ * @property {Number} shade 阴影
+ */
+function asColor(v, transform) {
+  if (!v || v.length == 0 || v == 'auto') {
+    return '#000000'
+  }
 
+  v = v.split(' ')[0]
+  const rgb = v.charAt(0) == '#' ? v : (RGB.test(v) ? '#' + v : v)
+  if (transform) {
+    const { lumMod, lumOff, tint, shade } = transform
+    if (lumMod || lumOff || tint) {
+      let color = Color(rgb)
+
+      if (tint != undefined) {
+        color = color.lighten(1 - tint)
+      }
+
+      if (lumMod != undefined) {
+        color = color.lighten(lumMod)
+      }
+
+      if (lumOff != undefined) {
+        color = color.darken(lumOff)
+      }
+
+      if (shade != undefined) {
+        color = color
+          .red(color.red() * (1 + shade))
+          .green(color.green() * (1 + shade))
+          .blue(color.blue() * (1 + shade))
+      }
+
+      return `${color.hex()}`.replace(/^0x/, "#")
+    }
+  }
+  return rgb
+}
+
+
+
+/**
+ * 提供从zip文件夹中获取到xml节点
+ * @param {JSZip} zip
+ * @param {String} file 需要读取的文件名
+ */
+function zipToXml(zip, file) {
+  const xml = zip.file(file).async('text')
+  const parser = new xml2js.Parser()
+  return parser.parseStringPromise(xml)
 }
 
 
 export {
-  ENUM_TO_PIXEL,
-  parsePageSetting
+  asColor, toPx, zipToXml
 };
 

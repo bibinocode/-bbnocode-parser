@@ -4,6 +4,8 @@
  */
 
 import { docx } from "docx4js";
+import JSZip from "jszip";
+
 
 import {
   EVENT_TYPES,
@@ -25,8 +27,8 @@ import {
  * @property {String} pluginsDir 插件目录
  * @property {Boolean} stopOnError 是否在插件处理错误时停止解析
  */
-async function parse(docxData, options = {}){
-  if(!docxData){
+async function parse(docxData, options = {}) {
+  if (!docxData) {
     throw new Error('必须提供文档数据')
   }
 
@@ -44,31 +46,37 @@ async function parse(docxData, options = {}){
   //   }
   // }
 
-  publishEvent(EVENT_TYPES.PARSE_START,{options})
+  publishEvent(EVENT_TYPES.PARSE_START, { options })
 
   // 解析文档
 
   try {
+
+    /**
+     * 这里考虑不用docx4js的方式,而是自己解析zip文件吧
+     */
+    const zip = await JSZip.loadAsync(docxData)
     const doc = await docx.load(docxData)
 
-    publishEvent(EVENT_TYPES.PARSE_LOADED,{document:doc})
+    publishEvent(EVENT_TYPES.PARSE_LOADED, { document: doc })
 
     let data = {
-      document:doc,
-      content:{},
-      ctx:{},
+      document: doc,
+      zip,
+      content: {},
+      ctx: {},
       options
     }
 
     // 按顺序执行所有启用的插件
     const enabledPlugins = getPlugins().filter(plugin => plugin.enabled)
-    publishEvent(EVENT_TYPES.PLUGINS_PROCESSING,{count:enabledPlugins.length})
+    publishEvent(EVENT_TYPES.PLUGINS_PROCESSING, { count: enabledPlugins.length })
 
-    for (const plugin of enabledPlugins){
-     
-      
-      publishEvent(EVENT_TYPES.PLUGIN_PROCESS_START,{
-        plugin:plugin.name,
+    for (const plugin of enabledPlugins) {
+
+
+      publishEvent(EVENT_TYPES.PLUGIN_PROCESS_START, {
+        plugin: plugin.name,
         priority: plugin.priority
       })
 
@@ -85,9 +93,9 @@ async function parse(docxData, options = {}){
           await plugin.onAfterProcess(data);
         }
 
-        publishEvent(EVENT_TYPES.PLUGIN_PROCESS_COMPLETE,{
-          plugin:plugin.name,
-          success:true
+        publishEvent(EVENT_TYPES.PLUGIN_PROCESS_COMPLETE, {
+          plugin: plugin.name,
+          success: true
         })
       } catch (error) {
         console.log("plugin", plugin);
@@ -101,31 +109,31 @@ async function parse(docxData, options = {}){
           console.error(`插件 ${plugin.name} 错误处理钩子执行失败:`, hookError);
         }
 
-        publishEvent(EVENT_TYPES.PLUGIN_PROCESS_ERROR, { 
+        publishEvent(EVENT_TYPES.PLUGIN_PROCESS_ERROR, {
           plugin: plugin.name,
           error: error.message
         });
 
-        if(options.stopOnError){
-          publishEvent(EVENT_TYPES.PARSE_ERROR, { 
+        if (options.stopOnError) {
+          publishEvent(EVENT_TYPES.PARSE_ERROR, {
             error: error.message,
             plugin: plugin.name
           });
-          
+
           throw error;
         }
       }
     }
 
-    publishEvent(EVENT_TYPES.PARSE_COMPLETE,{
-      result:data.content
+    publishEvent(EVENT_TYPES.PARSE_COMPLETE, {
+      result: data.content
     })
 
     return data.content
 
   } catch (error) {
-    publishEvent(EVENT_TYPES.PARSE_ERROR,{
-      error:error.message
+    publishEvent(EVENT_TYPES.PARSE_ERROR, {
+      error: error.message
     })
 
     throw error
