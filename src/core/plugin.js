@@ -6,6 +6,7 @@
 import fs from 'fs'
 import path from 'path'
 import { BehaviorSubject, filter, Subject, takeUntil } from "rxjs"
+import { pathToFileURL } from 'url'
 
 
 /**
@@ -294,6 +295,9 @@ function setPluginEnabled(pluginNameOrId, enabled = true){
 async function loadPluginsFromDir(pluginDir = 'src/plugins'){
   publishEvent(EVENT_TYPES.PLUGINS_LOAD_START, { directory: pluginDir });
 
+  if(pluginDir === 'src/plugins'){
+    pluginDir = path.resolve(process.cwd(), pluginDir)
+  }
   if (!fs.existsSync(pluginDir)) {
     console.warn(`插件目录 ${pluginDir} 不存在`);
     publishEvent(EVENT_TYPES.PLUGINS_LOAD_ERROR, { 
@@ -303,9 +307,11 @@ async function loadPluginsFromDir(pluginDir = 'src/plugins'){
     return [];
   }
 
-  const pluginFiles = fs.readdirSync(pluginDir)
-  .filter(file => file.endsWith('.js') || file.endsWith('.mjs'))
+  // 使用glob 递归查找
 
+  const {glob} = await import('glob')
+  const pluginFiles = await glob("*/index.{js,mjs}", {cwd: pluginDir,dot:false})
+  
   const loadPlugins = []
 
   publishEvent(EVENT_TYPES.PLUGINS_DISCOVERED, { 
@@ -317,7 +323,8 @@ async function loadPluginsFromDir(pluginDir = 'src/plugins'){
   for (const file of pluginFiles){
     try {
       const filePath = path.resolve(pluginDir,file)
-      const plugin = await import(filePath)
+      const fileUrl = pathToFileURL(filePath).href
+      const plugin = await import(fileUrl)
 
       // 支持默认导出或命名导出
       const pluginModule = plugin.default || plugin
@@ -375,7 +382,8 @@ async function loadPlugins(pluginPaths) {
   
   for (const pluginPath of paths) {
     try {
-      const plugin = await import(path.resolve(pluginPath));
+      const fileUrl = pathToFileURL(path.resolve(pluginPath)).href;
+      const plugin = await import(fileUrl);
       // 支持默认导出或命名导出
       const pluginModule = plugin.default || plugin;
       

@@ -6,12 +6,10 @@
 import { docx } from "docx4js";
 
 import {
-  createDefaultPlugin,
   EVENT_TYPES,
   getPlugins,
   loadPluginsFromDir,
-  publishEvent,
-  registerPlugin
+  publishEvent
 } from './plugin.js';
 
 
@@ -32,16 +30,19 @@ async function parse(docxData, options = {}){
     throw new Error('必须提供文档数据')
   }
 
-  // 如果没有插件,自动加载插件目录
-  const plugins = getPlugins()
-  if(plugins.length === 0 && options.autoLoadPlugins !== false){
-    await loadPluginsFromDir(options?.pluginsDir)
+  // 加载内置插件 plugins/**/*.js */
+  await loadPluginsFromDir()
 
-    // 没有插件,则使用默认插件
-    if(getPlugins().length === 0){
-      registerPlugin(createDefaultPlugin())
-    }
-  }
+  // 如果没有插件,自动加载插件目录
+  // const plugins = getPlugins()
+  // if(plugins.length === 0 && options.autoLoadPlugins !== false){
+  //   await loadPluginsFromDir(options?.pluginsDir)
+
+  //   // 没有插件,则使用默认插件
+  //   if(getPlugins().length === 0){
+  //     registerPlugin(createDefaultPlugin())
+  //   }
+  // }
 
   publishEvent(EVENT_TYPES.PARSE_START,{options})
 
@@ -55,6 +56,7 @@ async function parse(docxData, options = {}){
     let data = {
       document:doc,
       content:{},
+      ctx:{},
       options
     }
 

@@ -1363,14 +1363,18 @@ public class DocTplServiceImpl extends ServiceImpl<DocTplMapper, DocTpl> impleme
  @Override
  public DocDto uploadDocx(MultipartFile file) throws Exception {
   DocDto result = new DocDto();
+  // 创建一个结果对象，用于存储解析后的文档信息。
   XWPFDocument xwpfDocument = new XWPFDocument(file.getInputStream());
+  // 获取文档的节属性(Section Properties)，包含页面设置信息
   CTSectPr sectPr = xwpfDocument.getDocument().getBody().getSectPr();
+  // 检查页面方向：如果是横向(landscape)，设置paperDirection为"horizontal"。
   if(sectPr != null) {
    if(sectPr.getPgSz().getOrient()!=null) {
     if("landscape".equals(String.valueOf(sectPr.getPgSz().getOrient()))) {
      result.setPaperDirection("horizontal");
     }
    }
+   // 获取页面宽度(w)和高度(h)，并进行单位转换：
    BigInteger w = (BigInteger) sectPr.getPgSz().getW();
    double width = Math.ceil(w.intValue()  / 20 * 1.33445);
    BigInteger h = (BigInteger) sectPr.getPgSz().getH();
@@ -1383,14 +1387,20 @@ public class DocTplServiceImpl extends ServiceImpl<DocTplMapper, DocTpl> impleme
     result.setWidth((int) width);
    }
   }
+  // 根据页面方向设置最终的宽度和高度，横向时交换宽高值。
   List<Object> documentElements = new ArrayList<>();
   List<Object> headerElements = new ArrayList<>();
   List<Object> footerElements = new ArrayList<>();
+  // 创建三个列表分别存储：文档主体、页眉、页脚的内容元素。
   List<IBodyElement> bodyElements = xwpfDocument.getBodyElements();
+  // 获取文档主体的所有元素，包括段落、表格等。
   Map<BigInteger, JSONObject> listMap = new HashMap<>();
+  // 创建一个映射表，用于处理文档中的列表结构。
   List<XWPFHeader> headers = xwpfDocument.getHeaderList();
   int chartIndex = 0;
+  // 获取所有页眉、图表，并初始化图表索引
   List<XWPFChart> charts = xwpfDocument.getCharts();
+  // 遍历所有页眉，处理其中的段落，并将解析结果添加到headerElements中。
   if(ListUtil.isNotEmpty(headers)) {
    for (int i = 0; i < headers.size(); i++) {
     XWPFHeader header = headers.get(i);
@@ -1414,6 +1424,7 @@ public class DocTplServiceImpl extends ServiceImpl<DocTplMapper, DocTpl> impleme
     }
    }
   }
+  // 类似地，遍历所有页脚，处理其中的段落，结果添加到footerElements中。
   if(ListUtil.isNotEmpty(bodyElements)) {
    for (int i = 0; i < bodyElements.size(); i++) {
     IBodyElement iBodyElement = bodyElements.get(i);
