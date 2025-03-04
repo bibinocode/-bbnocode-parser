@@ -1,7 +1,7 @@
 {
-  "name": "parser-word",
+  "name": "@bbnocode/parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "parser docx document",
   "main": "app.js",
   "type": "module",
   "scripts": {
