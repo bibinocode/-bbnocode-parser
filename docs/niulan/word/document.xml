@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+  xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+  xmlns:w10="urn:schemas-microsoft-com:office:word"
+  xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+  xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+  xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+  xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+  xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+  xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData"
+  mc:Ignorable="w14 w15 wp14">
+  <w:body>
+    <w:p w14:paraId="7D04F2BA">
+      <w:pPr>
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="44" />
+          <w:szCs w:val="44" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="44" />
+          <w:szCs w:val="44" />
+        </w:rPr>
+        <w:t>商业地产信息展示规则</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="535D6FEA">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>整体发布要求</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6E6BA67C">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 发布人需通过实名认证，方可发布房源</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2A7AB398">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 发布房源需经过资质认证环节（部分城市）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="14B6EBFE">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(3) 发布内容必须符合平台信息展示规则，且保证真实</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2C34BE1F">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>政策要求-广告法违规</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="742E17C3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 新增集中不能使用或者变相使用中华人民共和国的国旗、国歌、国徽，军旗、军歌、军徽式房型、房间批量添加功能。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1DCEBE54">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 房型管不能使用或者变相使用国家机关、国家机关工作人员的名义或者形象，如政府定点、指定、推荐、专供、特供、直招、采购的表述理页面信息更规范展示</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="561ACCE0">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(3) 增加集
+          不能使用极限词用语；第一（NO.1Top1）、唯一、首席、楼王、极品、冠军、绝版、奢侈、至尊、顶级享受、国家级、世界级、首个、首选、精确、最、绝对、首家等中式筛选功能</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7EEA2C41">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(4) 不能妨碍社会公共秩序或者违背社会良好风尚</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="759E5C9D">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(5) 不能含有淫秽、色情、赌博、迷信、恐怖、暴力的内容；</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="10704D43">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(6) 不能含有民族、种族、宗教、性别歧视的内容；</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2A2FC693">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(7) 不能使用升值或者投资回报的承诺，投资”、“收益”、“回报”、“保值”、“理财”等</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4A05979B">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(8) 不能以项目到达某一具体参照物的所需时间表示项目位置，“分钟”、“小时”等</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6525AC70">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(9) 不能对规划或者建设中的交通、商业、文化教育设施以及其他市政条件作误导宣传。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6BF33FD8">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>平台规则-图片类违规</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3CFB2575">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 不能上传除门面、街景、内景图、户型图、平面图、沙盘图之外的图片，包括但不仅限于地图、路线图、房本特写、纯文字介绍图片，宣传单页、自拍照、风景照等</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6C81881C">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 不能在图片上加盖竞品水印（包括但不限于其他网站logo，网址，最、100%、真房源、佣金等广告字样）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="28E62353">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(3) 不能在图片上展示中介公司名称+宣传语</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="54B54A5B">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(4) 不能上传虚假的房源图片（与内部图片或本套房源不一致的房源图，装修情况不一致）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="58695974">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(5) 不能上传模糊、失真的房源图片（遮挡、拼接、马赛克、翻转等）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6D025F30">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(6) 不能在房源描述中插入图片（包括网站logo，头像等）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="28682476">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(7) 不能使用gif格式或者其他格式的动态图</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7FF6BC61">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(8) 不能在图片周围添加任何形式的边框</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5D8E5B39">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(9) 不得盗用他人图片（未经同意擅自复制截取图片内容，例如安居客和安居客水印重叠，安居客和赶集重叠的水印、58和赶集的重叠水印）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="729FF234">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(10) 不得在室内图类型中使用非室内图片，不得在户型图类型中使用非户型图图片。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="177DAFA2">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(11) 不能在图片中展示文字、数字、联系方式（QQ、微信、电话、网址、二维码）商铺门面广告条幅及LED屏除外</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="02950AFE">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>平台规则-标题内容违规</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0EB82946">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 不得在房源标题中展示多个小区、多套房源信息；不得展示发布更新时间、编号类信息（包括但不限于房源编号等）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3BE7B3E3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 不得发布纯数字、字母、符号以及乱写的汉字，或者无中文、无意义信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="22FBB7F9">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(3) 标题不能以广告的形式出现，如 “走过路过不要错过”、“挥泪大甩卖”</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3A6FA2A3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(4) 不得诱导用户点击链接页面或分享信息，如 “网站链接” 、“欢迎进入xx网“、”打开xx网“、“微博微信账号”、“二维码“等</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0751D910">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(5) 不得使用</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>纽蓝地产</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>以外的竞品网址</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="01A802FD">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(6) 不得发布“加微信”等繁体、异形字体、特殊符号等相关变相获取联系方式的信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="43159041">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(7) 不得发布“零首付”、“首付分期付”、“首付分***次”等宣传词汇</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="51711F20">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(8) 不得引导关注站外公众号，网站等（如更多信息请关注微信公众号【XX铺网】）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="02A279BC">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>平台规则-房源描述违规</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="20B59DD2">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 不得发布虚假房源，包括但不限于做低价格、已交易房源</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2323B8D8">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 不得发布价格、面积有误房源，房源价格实际价格与挂牌价格严重不符；建筑面积或使用面积明显有误</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0B30C986">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(3) 不得发布大量重复房源</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5ACE0BDD">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(4) 不得发布与房源不符的标题或描述</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="487DE52D">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(5) 不得盗用他人文字、图片、视频等信息（未经同意擅自复制截取文字内容，及视为盗用）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="322E68F6">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(6) 不得冒用他人房源信息，未经授权，擅自发布未有交易意向的房源</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="54D9B621">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(7) 不得发布曝光帖，如曝光某中介是黑中介或者曝光某个人信息等；竞品类侵权、直接与竞争对手进行比较或者贬低竞争对手的内容</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4F38A4C6">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(8) 不得使用“</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>纽蓝</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>推荐”、“</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>纽蓝</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>认证”、“</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>纽蓝</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>诚信保障”等为标题或内容发布信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5B2E49E2">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(9) 不能使用变形电话、联系人乱码、非中文字符、异形字体、特殊符号等方式规避审核发布违规词</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4EC4F45B">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(10) 描述中不能出现“家人出事急需借钱，或离婚、继承、分财产等字眼”描述个人生活状态的信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="73E6EE36">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(11) 不得发布明显虚假的电话号码，如电话栏电话号码位数错误；（如：1388888XX888，0112-8917XX54）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="38E877A8">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>平台规则-分类不当违规</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="51DB8859">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 不得跨大类发布信息（房产类别信息不得发布在二手、招聘及加盟信息下；招商加盟类广告需发布在本地服务类别下；）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="393B5818">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 不得发布虚拟店铺转让，技术转让等非实体店铺的信息。虚拟店铺转让（网店转让）应发布到二手物品类别、技术转让应发布到本地服务类别下</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1EE0E974">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>平台规则-联系方式违规</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="66A5C808">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 不得在电话栏以外的信息中填写任何联系方式（包含但不限于QQ、微信、电话、网址、MSN、邮箱、中介公司客服电话等)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5721E946">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 不能填写大于等于5位以上无意义的数字或字母串</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="29846B45">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>政策性规则-违法欺诈</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="414DFE07">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(1) 不得发布社保/公积金代缴/挂靠，信用卡/花呗/京东白条等套现信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6596B1BE">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(2) 不得发布代还代偿、垫资金融等服务</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3E5EB97F">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(3) 不得发布向未成年人/失信人员提供发放贷款、垫资、倒卖外汇、避税等违法违规相关服务</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="44377114">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(4) 不得发布上门输液打针、试药等医疗服务相关信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="21811165">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(5) 不得发布彩票投注机转让或彩票站带手续、带设备出兑、出租、转让相关信息</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="04E58AEB">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>
+          (6)
+          不得发布《中华人民共和国城市房地产管理法》《物权法》等法律中规定的不得流转的房产的交易、租赁和抵押贷款服务；包含但不限于被查封房产、抵账房、垫资房、农村宅基地及其附属房屋、小产权房、无产权证房、安置房、廉租房、公租房、两限房、军产房和取得产权证书不满5年或未明确声明取得产权证书满5年的经济适用房。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7B222432">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(7) 不得发布引导用户添加微信以及变形联系方式的信息（同音异形字，用符号隔断等）</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="13FDEFA3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+        <w:t>(8) 不得批量发布虚假房源信息，如进行招商、引流、套取信息等行为</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="25AD646D">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4B0A0C56">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2F69B45D">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="27BEEE62">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="default" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>图片</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="06066A43">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5273040" cy="2964815" />
+            <wp:effectExtent l="0" t="0" r="3810" b="6985" />
+            <wp:docPr id="2" name="图片 2" descr="户型图" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="2" name="图片 2" descr="户型图" />
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" />
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" />
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="5273040" cy="2964815" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="77012813">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="default" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>形状</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="512AF263">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1B2556F4">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="786B3457">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="571730B7">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5256530" cy="2988310" />
+            <wp:effectExtent l="5080" t="4445" r="15240" b="17145" />
+            <wp:docPr id="5" name="图表 5" />
+            <wp:cNvGraphicFramePr />
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/chart">
+                <c:chart xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart"
+                  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                  r:id="rId9" />
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3FF2794D">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="595E13AB">
+      <w:pPr>
+        <m:rPr />
+        <w:rPr>
+          <w:rFonts w:hAnsi="Cambria Math" />
+          <w:i w:val="0" />
+        </w:rPr>
+      </w:pPr>
+      <m:oMathPara>
+        <m:oMath>
+          <m:r>
+            <m:rPr />
+            <w:rPr>
+              <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+            </w:rPr>
+            <m:t>x=</m:t>
+          </m:r>
+          <m:f>
+            <m:fPr>
+              <m:ctrlPr>
+                <m:rPr />
+                <w:rPr>
+                  <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                  <w:i />
+                </w:rPr>
+              </m:ctrlPr>
+            </m:fPr>
+            <m:num>
+              <m:r>
+                <m:rPr />
+                <w:rPr>
+                  <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                </w:rPr>
+                <m:t>−b±</m:t>
+              </m:r>
+              <m:rad>
+                <m:radPr>
+                  <m:degHide m:val="1" />
+                  <m:ctrlPr>
+                    <m:rPr />
+                    <w:rPr>
+                      <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                      <w:i />
+                    </w:rPr>
+                  </m:ctrlPr>
+                </m:radPr>
+                <m:deg>
+                  <m:ctrlPr>
+                    <m:rPr />
+                    <w:rPr>
+                      <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                      <w:i />
+                    </w:rPr>
+                  </m:ctrlPr>
+                </m:deg>
+                <m:e>
+                  <m:sSup>
+                    <m:sSupPr>
+                      <m:ctrlPr>
+                        <m:rPr />
+                        <w:rPr>
+                          <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                          <w:i />
+                        </w:rPr>
+                      </m:ctrlPr>
+                    </m:sSupPr>
+                    <m:e>
+                      <m:r>
+                        <m:rPr />
+                        <w:rPr>
+                          <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                        </w:rPr>
+                        <m:t>b</m:t>
+                      </m:r>
+                      <m:ctrlPr>
+                        <m:rPr />
+                        <w:rPr>
+                          <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                          <w:i />
+                        </w:rPr>
+                      </m:ctrlPr>
+                    </m:e>
+                    <m:sup>
+                      <m:r>
+                        <m:rPr />
+                        <w:rPr>
+                          <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                        </w:rPr>
+                        <m:t>2</m:t>
+                      </m:r>
+                      <m:ctrlPr>
+                        <m:rPr />
+                        <w:rPr>
+                          <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                          <w:i />
+                        </w:rPr>
+                      </m:ctrlPr>
+                    </m:sup>
+                  </m:sSup>
+                  <m:r>
+                    <m:rPr />
+                    <w:rPr>
+                      <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                    </w:rPr>
+                    <m:t>−4ac</m:t>
+                  </m:r>
+                  <m:ctrlPr>
+                    <m:rPr />
+                    <w:rPr>
+                      <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                      <w:i />
+                    </w:rPr>
+                  </m:ctrlPr>
+                </m:e>
+              </m:rad>
+              <m:ctrlPr>
+                <m:rPr />
+                <w:rPr>
+                  <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                  <w:i />
+                </w:rPr>
+              </m:ctrlPr>
+            </m:num>
+            <m:den>
+              <m:r>
+                <m:rPr />
+                <w:rPr>
+                  <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                </w:rPr>
+                <m:t>2a</m:t>
+              </m:r>
+              <m:ctrlPr>
+                <m:rPr />
+                <w:rPr>
+                  <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math" />
+                  <w:i />
+                </w:rPr>
+              </m:ctrlPr>
+            </m:den>
+          </m:f>
+        </m:oMath>
+      </m:oMathPara>
+    </w:p>
+    <w:p w14:paraId="39E39D33">
+      <w:r>
+        <w:commentReference w:id="0" />
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5BDBDD88" />
+    <w:p w14:paraId="5582DB6C">
+      <w:pPr>
+        <m:rPr />
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="0" w:name="定位书签" />
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>测试</w:t>
+      </w:r>
+      <w:bookmarkStart w:id="1" w:name="_GoBack" />
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" />
+          <w:lang w:val="en-US" w:eastAsia="zh-CN" />
+        </w:rPr>
+        <w:t>书签</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="0" />
+      <w:bookmarkEnd w:id="1" />
+    </w:p>
+    <w:sectPr>
+      <w:headerReference r:id="rId5" w:type="default" />
+      <w:footerReference r:id="rId6" w:type="default" />
+      <w:pgSz w:w="11906" w:h="16838" />
+      <w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="851"
+        w:footer="992" w:gutter="0" />
+      <w:pgNumType w:fmt="decimal" />
+      <w:cols w:space="425" w:num="1" />
+      <w:docGrid w:type="lines" w:linePitch="312" w:charSpace="0" />
+    </w:sectPr>
+  </w:body>
+</w:document>

@@ -5,7 +5,9 @@
  * @since 2025-03-04
  */
 import {
-  asColor, cm2Px, dxa2Px, emu2Px, pt2px, toPx,
+  asColor, cm2Px, dxa2Px, emu2Px,
+  parseXML,
+  pt2px, toPx,
   zipToXml
 } from './core/index.js'
 
@@ -19,7 +21,8 @@ export default {
       ctx: {
         ...data.ctx,
         asColor, cm2Px, dxa2Px, emu2Px, pt2px, toPx,
-        zipToXml
+        zipToXml,
+        parseXML
       }
     }
   }

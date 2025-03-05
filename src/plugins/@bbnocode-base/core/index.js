@@ -1,3 +1,4 @@
+import { load } from 'cheerio';
 import Color from 'color';
 import xml2js from 'xml2js';
 
@@ -127,8 +128,28 @@ async function zipToXml(zip, file) {
   }
 }
 
+/**
+ * 通过cheerio解析xml
+ */
+async function parseXML(zip,file){
+  try {
+    const zipFile = zip.file(file)
+    if(!zipFile){
+      console.error('可用文件列表:', Object.keys(zip.files))
+      throw new Error(`文件 ${file} 不存在`)
+    }
+    const xml = await zipFile.async('text')
+    return load(xml,{
+      xml:true,
+      xmlMode:true
+    })
+  } catch (error) {
+    throw error
+  }
+}
+
 export {
-  asColor, cm2Px, dxa2Px, emu2Px, pt2px, toPx,
+  asColor, cm2Px, dxa2Px, emu2Px, parseXML, pt2px, toPx,
   zipToXml
 };
 

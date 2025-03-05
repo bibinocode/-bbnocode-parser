@@ -3,7 +3,6 @@
  * @description 文档解析模块
  */
 
-import { docx } from "docx4js";
 import JSZip from "jszip";
 
 
@@ -56,12 +55,10 @@ async function parse(docxData, options = {}) {
      * 这里考虑不用docx4js的方式,而是自己解析zip文件吧
      */
     const zip = await JSZip.loadAsync(docxData)
-    const doc = await docx.load(docxData)
 
-    publishEvent(EVENT_TYPES.PARSE_LOADED, { document: doc })
+    publishEvent(EVENT_TYPES.PARSE_LOADED, { zip })
 
     let data = {
-      document: doc,
       zip,
       content: {},
       ctx: {},
